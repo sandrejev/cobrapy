@@ -62,7 +62,7 @@ def moma(wt_model, mutant_model, objective_sense='maximize', solver=None,
 
     """
     if solver is None:
-        if norm_type == "euclidiean":
+        if norm_type == "euclidean":
             solver = get_solver_name(qp=True)
         else:
             solver = get_solver_name()  # linear is not even implemented yet
